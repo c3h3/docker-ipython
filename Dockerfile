@@ -1,5 +1,5 @@
 
-FROM c3h3/scipy:u1404-py278
+FROM c3h3/scipy:deb8-py278
 
 MAINTAINER Chia-Chi Chang <c3h3.tw@gmail.com>
 
