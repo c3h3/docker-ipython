@@ -4,7 +4,9 @@ FROM c3h3/scipy:u1404-py278
 MAINTAINER Chia-Chi Chang <c3h3.tw@gmail.com>
 
 # Install IPython Notebook 
-RUN cd /tmp && git clone https://github.com/c3h3/ipython.git && cd /tmp/ipython &&  git checkout f83f7d27abb227eea362ef && python setup.py install && rm -rf /tmp/ipython && pip install pyzmq jinja2 tornado 
+RUN cd /tmp && git clone https://github.com/c3h3/ipython.git && cd /tmp/ipython &&  git checkout f83f7d27abb227eea362ef && python setup.py install && rm -rf /tmp/ipython 
+
+RUN pip install pyzmq jinja2 tornado 
 
 
 RUN mkdir ipynbs && mkdir data
